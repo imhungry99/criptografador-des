@@ -10,14 +10,15 @@
     <div class="main">
         <form id="formulario" autocomplete="off">
             <fieldset>
-              <legend class="txt-prin">criptografador & descriptogrador</legend>
+              <div class="formulario">
+                <legend class="txt-prin">criptografador & descriptogrador</legend>
                 <div class="form">
                     <div class="texto">
-                        <label>texto:</label>
+                        <label>texto:</label><br>
                         <input class="texto" type="text"><br>
                     </div>
                     <div class="senha">
-                        <label>senha:</label>
+                        <label>senha:</label><br>
                         <input class="senha" type="password"><br>
                     </div>
                     <div class="butaum">
@@ -25,6 +26,7 @@
                         <input class="des" type="submit" value="descriptografar">
                     </div>
                 </div>
+              </div>
             </fieldset>
           </form>
     </div>
@@ -39,6 +41,12 @@
     margin: 0;
 }
 
+.form input {
+    background-color: transparent;
+    border: solid 1px black;
+    border-radius: 20px;
+}
+
 .form {
     border: solid 1px black;
     border-radius: 30px;
@@ -51,6 +59,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
 .txt-prin {
