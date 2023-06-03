@@ -8,20 +8,22 @@
 </head>
 <body>
     <div class="main">
-        <form class="form" id="formulario" autocomplete="off">
+        <form id="formulario" autocomplete="off">
             <fieldset>
               <legend class="txt-prin">criptografador & descriptogrador</legend>
-                <div class="texto">
-                    <label>texto:</label>
-                    <input class="texto" type="text"><br>
-                </div>
-                <div class="senha">
-                    <label>senha:</label>
-                    <input class="senha" type="password"><br>
-                </div>
-                <div class="butaum">
-                    <input class="crip" type="submit" value="criptografar">
-                    <input class="des" type="submit" value="descriptografar">
+                <div class="form">
+                    <div class="texto">
+                        <label>texto:</label>
+                        <input class="texto" type="text"><br>
+                    </div>
+                    <div class="senha">
+                        <label>senha:</label>
+                        <input class="senha" type="password"><br>
+                    </div>
+                    <div class="butaum">
+                        <input class="crip" type="submit" value="criptografar">
+                        <input class="des" type="submit" value="descriptografar">
+                    </div>
                 </div>
             </fieldset>
           </form>
@@ -39,10 +41,16 @@
 
 .form {
     border: solid 1px black;
-    border-radius: 30%;
+    border-radius: 30px;
     margin: 100px;
     margin-top: 150px;
     margin-bottom: 0;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .txt-prin {
